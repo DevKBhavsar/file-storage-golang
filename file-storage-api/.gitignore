@@ -1,0 +1,23 @@
+# Ignore Go binaries and built files
+*.exe
+*.dll
+*.so
+*.dylib
+*.log
+*.out
+
+# Go build and vendor folders
+/vendor/
+/bin/
+/build/
+/tmp/
+/coverage.out
+
+# IDE and Editor Specific Files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore environment files
+.env
