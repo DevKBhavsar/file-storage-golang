@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { registerUser } from "../api/api";
+import { Link } from "react-router-dom";
 
 function Register() {
   const [user, setUser] = useState({ username: "", password: "" });
@@ -46,8 +47,7 @@ function Register() {
         <button type="submit">Register</button>
       </form>
       <p>{message}</p>
-      <a href="/login">Login</a>
-    </div>
+      <Link to="/login">Login</Link>    </div>
   );
 }
 

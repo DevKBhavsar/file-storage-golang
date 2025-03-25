@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { loginUser } from "../api/api";
 import { saveToken } from "../utils/auth";
+import { Link } from "react-router-dom";
+
 
 function Login() {
   const [user, setUser] = useState({ username: "", password: "" });
@@ -48,8 +50,7 @@ function Login() {
         <button type="submit">Login</button>
       </form>
       <p>{message}</p>
-      <a href="/register">register</a>
-
+      <Link to="/register">Register</Link>
     </div>
   );
 }
